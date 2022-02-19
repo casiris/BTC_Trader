@@ -180,20 +180,6 @@ namespace BitcoinTrader
                     }
                 }
             }
-            String s = "12:01:00AM";
-            char[] trim = {'A', 'P', 'M'};
-            Console.WriteLine(s);
-            Console.WriteLine(s.Trim(trim));
-            String hour = s.Substring(0, 2);
-            Console.WriteLine("yes {0}", Int32.Parse(hour) +12);
-            hour = (Int32.Parse(hour) + 12).ToString();
-            s = s.Remove(0, 2).Insert(0, hour);
-            Console.WriteLine(s);
-
-            Console.WriteLine(buycounter);
-            Console.WriteLine(sellcounter);
-            Console.WriteLine("final capital: {0}", finalCapital);
-            Console.ReadLine();
         }
     }
 }
